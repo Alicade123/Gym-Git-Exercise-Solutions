@@ -318,3 +318,59 @@ Your branch is ahead of 'origin/main' by 1 commit.
 nothing to commit, working tree clean
 PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
 ```
+
+## Bundle 2
+
+### Exercise 1
+
+```bash
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout -b "ft/bundle-2"
+Switched to a new branch 'ft/bundle-2'
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git add .\services.html
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -m "Added service page"     
+[ft/bundle-2 d775680] Added service page
+ 1 file changed, 14 insertions(+)
+ create mode 100644 services.html
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 462 bytes | 231.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/Alicade123/Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2
+remote:
+To https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
+```
+
+### Exercise 2
+
+```bash 
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+* ft/bundle-2
+  main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git pull
+Updating 91a14c5..3402a27
+Fast-forward
+ services.html | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+ create mode 100644 services.html
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+  ft/bundle-2
+* main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
+```
