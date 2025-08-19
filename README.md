@@ -327,7 +327,7 @@ PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
 PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout -b "ft/bundle-2"
 Switched to a new branch 'ft/bundle-2'
 PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git add .\services.html
-PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -m "Added service page"     
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -m "Added service page"
 [ft/bundle-2 d775680] Added service page
  1 file changed, 14 insertions(+)
  create mode 100644 services.html
@@ -339,7 +339,7 @@ Compressing objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 462 bytes | 231.00 KiB/s, done.
 Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-remote: 
+remote:
 remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
 remote:      https://github.com/Alicade123/Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2
 remote:
@@ -350,7 +350,7 @@ PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
 
 ### Exercise 2
 
-```bash 
+````bash
 PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
 * ft/bundle-2
   main
@@ -373,4 +373,308 @@ Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout -b "ft/service-redesign"
+Switched to a new branch 'ft/service-redesign'
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+  ft/bundle-2
+* ft/service-redesign
+  main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -am "Added List of services"
+[ft/service-redesign 856b232] Added List of services
+ 2 files changed, 64 insertions(+)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push origin ft/searvice-redesign
+error: src refspec ft/searvice-redesign does not match any
+error: failed to push some refs to 'https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git'
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push origin ft/service-redesign
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.12 KiB | 1.12 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/Alicade123/Gym-Git-Exercise-Solutions/pull/new/ft/service-redesign
+remote:
+To https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -am "Adde Our Team"
+[main 1cdc900] Adde Our Team
+ 1 file changed, 8 insertions(+)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 548 bytes | 548.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git
+   3402a27..1cdc900  main -> main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git diff
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git diff ft/service-redesign main
+diff --git a/README.md b/README.md
+index 45fe4cd..93b5837 100644
+--- a/README.md
++++ b/README.md
+@@ -318,59 +318,3 @@ Your branch is ahead of 'origin/main' by 1 commit.
+ nothing to commit, working tree clean
+ PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
+
+
+
+-
+-## Bundle 2
+-
+-### Exercise 1
+-
+-```bash
+-PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout -b "ft/bundle-2"
+-Switched to a new branch 'ft/bundle-2'
+-PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git add .\services.html
+-PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -m "Added service page"
+-[ft/bundle-2 d775680] Added service page
+- 1 file changed, 14 insertions(+)
+- create mode 100644 services.html
+-PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push origin ft/bundle-2
+-Enumerating objects: 4, done.
+-Counting objects: 100% (4/4), done.
+-Delta compression using up to 12 threads
+-Compressing objects: 100% (3/3), done.
+-Writing objects: 100% (3/3), 462 bytes | 231.00 KiB/s, done.
+-Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+-remote:
+-remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+-remote:      https://github.com/Alicade123/Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2
+-remote:
+-To https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git
+- * [new branch]      ft/bundle-2 -> ft/bundle-2
+-PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
+-```
+-
+-### Exercise 2
+-
+-```bash
+-PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+-* ft/bundle-2
+-  main
+-PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout main
+-Switched to branch 'main'
+-Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+-  (use "git pull" to update your local branch)
+-PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git pull
+-Updating 91a14c5..3402a27
+-Fast-forward
+- services.html | 14 ++++++++++++++
+- 1 file changed, 14 insertions(+)
+- create mode 100644 services.html
+-PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+-  ft/bundle-2
+-* main
+-PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git status
+-On branch main
+-Your branch is up to date with 'origin/main'.
+-
+-nothing to commit, working tree clean
+-PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
+-```
+\ No newline at end of file
+diff --git a/services.html b/services.html
+index 2e81818..cfd3280 100644
+--- a/services.html
++++ b/services.html
+@@ -9,13 +9,13 @@
+
+ <body>
+     <h3>Service Page</h3>
+-
+-    <label>List of Service</label>
++    <label for="">Our Team</label>
+     <ul>
+-        <li>Web Development</li>
+-        <li>Mobile App Development</li>
+-        <li>Software Engineering Training</li>
+-        <li>Web Hosting And Management service</li>
++        <li>Alicade ABITURIJE</li>
++        <li>Regis MUCYO</li>
++        <li>Pascal KUBANA</li>
++        <li>J. Paul IRADUKUNDA</li>
++        <li>Elie MUGISHA </li>
+     </ul>
+ </body>
+
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git merge ft/service-redesign
+Already up to date.
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+  ft/bundle-2
+* ft/service-redesign
+  main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -am "fix: resolve conflicts"
+On branch ft/service-redesign
+nothing to commit, working tree clean
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push origin ft/service-redesign
+Everything up-to-date
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git diff main ft/service-redesign
+diff --git a/README.md b/README.md
+index 93b5837..45fe4cd 100644
+--- a/README.md
++++ b/README.md
+@@ -318,3 +318,59 @@ Your branch is ahead of 'origin/main' by 1 commit.
+ nothing to commit, working tree clean
+ PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
+
+
+- +## Bundle 2
+- +### Exercise 1
+- +```bash
+  +PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout -b "ft/bundle-2"
+  +Switched to a new branch 'ft/bundle-2'
+  +PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git add .\services.html
+  +PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -m "Added service page"
+  +[ft/bundle-2 d775680] Added service page
+- 1 file changed, 14 insertions(+)
+- create mode 100644 services.html
+  +PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push origin ft/bundle-2
+  +Enumerating objects: 4, done.
+  +Counting objects: 100% (4/4), done.
+  +Delta compression using up to 12 threads
+  +Compressing objects: 100% (3/3), done.
+  +Writing objects: 100% (3/3), 462 bytes | 231.00 KiB/s, done.
+  +Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+  +remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+  +remote:
+  +remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+  +remote: https://github.com/Alicade123/Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2
+  +remote:
+  +To https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git
+- - [new branch] ft/bundle-2 -> ft/bundle-2
+    +PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
+    +```
+- +### Exercise 2
+- +```bash
+  +PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+  +\* ft/bundle-2
+- main
+  +PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout main
+  +Switched to branch 'main'
+  +Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+- (use "git pull" to update your local branch)
+  +PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git pull
+  +Updating 91a14c5..3402a27
+  +Fast-forward
+- services.html | 14 ++++++++++++++
+- 1 file changed, 14 insertions(+)
+- create mode 100644 services.html
+  +PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+- ft/bundle-2
+  +\* main
+  +PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git status
+  +On branch main
+  +Your branch is up to date with 'origin/main'.
+- +nothing to commit, working tree clean
+  +PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
+  +```
+  \ No newline at end of file
+  diff --git a/services.html b/services.html
+  index cfd3280..2e81818 100644
+  --- a/services.html
+  +++ b/services.html
+  @@ -9,13 +9,13 @@
+   <body>
+       <h3>Service Page</h3>
+
+* <label for="">Our Team</label>
+
+-
+- <label>List of Service</label>
+  <ul>
+
+*        <li>Alicade ABITURIJE</li>
+*        <li>Regis MUCYO</li>
+*        <li>Pascal KUBANA</li>
+*        <li>J. Paul IRADUKUNDA</li>
+*        <li>Elie MUGISHA </li>
+
+-        <li>Web Development</li>
+-        <li>Mobile App Development</li>
+-        <li>Software Engineering Training</li>
+-        <li>Web Hosting And Management service</li>
+     </ul>
+ </body>
+diff --git a/README.md b/README.md
+index 93b5837..45fe4cd 100644
+--- a/README.md
++++ b/README.md
+@@ -318,3 +318,59 @@ Your branch is ahead of 'origin/main' by 1 commit.
+ nothing to commit, working tree clean
+ PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
+  ```
+- +## Bundle 2
+- +### Exercise 1
+- +```bash
+  +PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout -b "ft/bundle-2"
+  PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git merge ft/service-redesign
+  Auto-merging services.html
+  CONFLICT (content): Merge conflict in services.html
+- +## Bundle 2
+- +### Exercise 1
+- +```bash
+  +PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout -b "ft/bundle-2"
+  PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git merge ft/service-redesign
+  Auto-merging services.html
+  CONFLICT (content): Merge conflict in services.html
+  +### Exercise 1
+- +```bash
+  +PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout -b "ft/bundle-2"
+  PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git merge ft/service-redesign
+  Auto-merging services.html
+  CONFLICT (content): Merge conflict in services.html
+  ```
+ - +```bash
+  +PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout -b "ft/bundle-2"
+  PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git merge ft/service-redesign
+  Auto-merging services.html
+  CONFLICT (content): Merge conflict in services.html
+  +PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout -b "ft/bundle-2"
+  PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git merge ft/service-redesign
+  Auto-merging services.html
+  CONFLICT (content): Merge conflict in services.html
+  PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git merge ft/service-redesign
+  Auto-merging services.html
+  CONFLICT (content): Merge conflict in services.html
+  Auto-merging services.html
+  CONFLICT (content): Merge conflict in services.html
+  CONFLICT (content): Merge conflict in services.html
+  Automatic merge failed; fix conflicts and then commit the result.
+  PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git merge ft/service-redesign
+  fatal: You have not concluded your merge (MERGE_HEAD exists).
+  Please, commit your changes before you merge.
+  PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -am "fix: resolve conflicts"
+  [main 5aaf014] fix: resolve conflicts
+  PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push origin main
+  Enumerating objects: 7, done.
+  Counting objects: 100% (7/7), done.
+  Delta compression using up to 12 threads
+  Compressing objects: 100% (3/3), done.
+  Writing objects: 100% (3/3), 455 bytes | 455.00 KiB/s, done.
+  Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+  remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+  To https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git
+  1cdc900..5aaf014 main -> main
+  PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
 ```
+````
+
+## Bundle 3
+
+### Exercise 1
