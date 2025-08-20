@@ -678,3 +678,285 @@ index 93b5837..45fe4cd 100644
 ## Bundle 3
 
 ### Exercise 1
+
+```bash
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+  ft/bundle-2
+  ft/service-redesign
+* main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout -b "ft/team-page"
+Switched to a new branch 'ft/team-page'
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+  ft/bundle-2
+  ft/service-redesign
+* ft/team-page
+  main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git status
+On branch ft/team-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -am "Added team page"
+On branch ft/team-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git add .
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git status
+On branch ft/team-page
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -m "Added team page"
+[ft/team-page 66d0285] Added team page
+ 1 file changed, 14 insertions(+)
+ create mode 100644 team.html
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 449 bytes | 449.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/Alicade123/Gym-Git-Exercise-Solutions/pull/new/ft/team-page
+remote:
+To https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/team-page -> ft/team-page
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout -b "ft/contact-page"
+Switched to a new branch 'ft/contact-page'
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+  ft/bundle-2
+* ft/contact-page
+  ft/service-redesign
+  ft/team-page
+  main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout "ft/team-page"
+Switched to branch 'ft/team-page'
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git log
+commit 66d02855ec75872038bd91b0b865028401e16575 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+Date:   Wed Aug 20 10:07:56 2025 +0200
+
+    Added team page
+
+commit f1325f3401986e852f408310eceb1111276ee6bf (origin/main, main, ft/contact-page)
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+Date:   Tue Aug 19 11:44:41 2025 +0200
+
+    Update: README file
+
+commit 5aaf0149cfaaf62fbce1d76b1c9dcd8a1ec30bc8
+Merge: 1cdc900 856b232
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+Date:   Tue Aug 19 11:08:34 2025 +0200
+
+    fix: resolve conflicts
+
+commit 1cdc900d0457841cf9ccbf3e26e358cd3b4d012a
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+Date:   Tue Aug 19 10:54:28 2025 +0200
+
+    Adde Our Team
+
+commit 856b2327b3e6c2aad5adc0d30d7fff7630e17536 (origin/ft/service-redesign, ft/service-redesign)
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+Date:   Tue Aug 19 10:47:41 2025 +0200
+
+    Added List of services
+
+commit 3402a2719d2b22d23b4e84d2f67ac9423c33dfe6
+Merge: 91a14c5 d775680
+Author: Regis Mucyo <mucyoregis250@gmail.com>
+Date:   Tue Aug 19 10:36:58 2025 +0200
+
+    Merge pull request #1 from Alicade123/ft/bundle-2
+
+    Added service page
+
+commit d77568003932441b43e7e0e1ad51a42b27c75a3d (origin/ft/bundle-2, ft/bundle-2)
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+Date:   Tue Aug 19 10:19:23 2025 +0200
+
+    Added service page
+
+commit 91a14c5e1ad1193f8708252a08083d47e08c35a9
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+Date:   Mon Aug 18 20:38:49 2025 +0200
+
+    add final changes of Bundle1 Exercise 2
+
+commit 3bac049fffbaaa817e58dd10d9f18730ac1d7ca9
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+
+    add final changes of Bundle1 Exercise 2
+
+commit 3bac049fffbaaa817e58dd10d9f18730ac1d7ca9
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+    add final changes of Bundle1 Exercise 2
+
+commit 3bac049fffbaaa817e58dd10d9f18730ac1d7ca9
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+commit 3bac049fffbaaa817e58dd10d9f18730ac1d7ca9
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+Date:   Mon Aug 18 20:33:40 2025 +0200
+Date:   Mon Aug 18 20:33:40 2025 +0200
+
+    add the about page and home page
+
+    add the about page and home page
+    add the about page and home page
+
+commit b58c05b512669aa6e31664de03e69a462a809131
+    add the about page and home page
+
+commit b58c05b512669aa6e31664de03e69a462a809131
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+    add the about page and home page
+
+commit b58c05b512669aa6e31664de03e69a462a809131
+    add the about page and home page
+
+
+commit b58c05b512669aa6e31664de03e69a462a809131
+commit b58c05b512669aa6e31664de03e69a462a809131
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+Date:   Mon Aug 18 20:27:55 2025 +0200
+
+    initial commit
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout "ft/contact-page"
+Switched to branch 'ft/contact-page'
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git cherry-pick "66d02855ec75872038bd91b0b865028401e16575"
+[ft/contact-page 2c18173] Added team page
+ Date: Wed Aug 20 10:07:56 2025 +0200
+ 1 file changed, 14 insertions(+)
+ create mode 100644 team.html
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -am "Change added in tean page"
+[ft/contact-page f2323f9] Change added in tean page
+ 1 file changed, 8 insertions(+)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push origin ft/contact-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 803 bytes | 803.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/Alicade123/Gym-Git-Exercise-Solutions/pull/new/ft/contact-page
+remote:
+To https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch "ft/faq-page"
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+  ft/bundle-2
+* ft/contact-page
+  ft/faq-page
+  ft/service-redesign
+  ft/team-page
+  main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+  ft/bundle-2
+  ft/contact-page
+* ft/faq-page
+  ft/service-redesign
+  ft/team-page
+  main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -am "Added faq page"
+On branch ft/faq-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        faq.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git add .
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -m "Added faq page"
+[ft/faq-page c77e778] Added faq page
+ 1 file changed, 20 insertions(+)
+ create mode 100644 faq.html
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 526 bytes | 526.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/Alicade123/Gym-Git-Exercise-Solutions/pull/new/ft/faq-page
+remote:
+To https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git revert "66d02855ec75872038bd91b0b865028401e16575"
+CONFLICT (modify/delete): team.html deleted in parent of 66d0285 (Added team page) and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not revert 66d0285... Added team page
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+hint: Disable this message with "git config advice.mergeConflict false"
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git log
+commit c77e778492f6e4ae9c4d80fb66760ae38ae8e9a0 (HEAD -> ft/faq-page, origin/ft/faq-page)
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+Date:   Wed Aug 20 10:40:01 2025 +0200
+
+    Added faq page
+
+commit f2323f91c036b454c05b5a8e4708d9351728fbed (origin/ft/contact-page, ft/contact-page)
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+Date:   Wed Aug 20 10:29:36 2025 +0200
+
+    Change added in tean page
+
+commit 2c18173b5751fbc493721cd14a32113bf582795c
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+Date:   Wed Aug 20 10:07:56 2025 +0200
+
+    Added team page
+
+commit f1325f3401986e852f408310eceb1111276ee6bf (origin/main, main)
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+Date:   Tue Aug 19 11:44:41 2025 +0200
+
+    Update: README file
+
+commit 5aaf0149cfaaf62fbce1d76b1c9dcd8a1ec30bc8
+Merge: 1cdc900 856b232
+Author: Alicade Abiturije Dusabe <abiturije1alicade@gmail.com>
+Date:   Tue Aug 19 11:08:34 2025 +0200
+
+    fix: resolve conflicts
+
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git revert "2c18173b5751fbc493721cd14a32113bf582795c"
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git revert "66d02855ec75872038bd91b0b865028401e16575"
+[ft/team-page 9b836e5] Revert "Added team page"
+ 1 file changed, 14 deletions(-)
+ delete mode 100644 team.html
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 363 bytes | 363.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git
+   f9c62f2..c1430ce  ft/faq-page -> ft/faq-page
+```
