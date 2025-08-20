@@ -960,3 +960,92 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git
    f9c62f2..c1430ce  ft/faq-page -> ft/faq-page
 ```
+
+### Exercise 2
+
+```bash
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+  ft/bundle-2
+  ft/contact-page
+* ft/faq-page
+  ft/service-redesign
+  ft/team-page
+  main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch "ft/home-page-redesign"
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+  ft/bundle-2
+  ft/contact-page
+* ft/faq-page
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+  main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout main
+M       README.md
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -am "Added Change in home page"
+[main 68edd98] Added Change in home page
+ 2 files changed, 283 insertions(+)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+* ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+  main
+  PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git add .
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -m "Update the home page"
+[ft/home-page-redesign 9223a74] Update the home page
+ 1 file changed, 1 insertion(+)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>     git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 1.57 KiB | 401.00 KiB/s, done.
+Total 11 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/Alicade123/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git
+Delta compression using up to 12 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 1.57 KiB | 401.00 KiB/s, done.
+Total 11 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 2 local objects.
+remote:
+Delta compression using up to 12 threads
+Delta compression using up to 12 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 1.57 KiB | 401.00 KiB/s, done.
+Total 11 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/Alicade123/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
+
+```
