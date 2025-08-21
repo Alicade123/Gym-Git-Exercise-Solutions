@@ -1049,3 +1049,86 @@ branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
 PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
 
 ```
+
+## Bundle 4
+
+### Exercise 1
+
+```bash
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote add git-copy https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (fetch)
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (push)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote add git-copy https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (fetch)
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (push)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote add git-copy https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (fetch)
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote add git-copy https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (fetch)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote add git-copy https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (fetch)
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (push)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+* main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git add --all
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -m "New Feature added"
+[main 78bb6e7] New Feature added
+ 1 file changed, 27 insertions(+)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.04 KiB | 531.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git
+   8e224ae..78bb6e7  main -> main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push git-copy main
+Enumerating objects: 66, done.
+Counting objects: 100% (66/66), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (66/66), done.
+Writing objects: 100% (66/66), 15.41 KiB | 876.00 KiB/s, done.
+Total 66 (delta 38), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (38/38), done.
+To https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git
+ * [new branch]      main -> main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
+```
