@@ -1049,3 +1049,235 @@ branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
 PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
 
 ```
+
+## Bundle 4
+
+### Exercise 1
+
+```bash
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote add git-copy https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (fetch)
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (push)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote add git-copy https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (fetch)
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (push)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote add git-copy https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (fetch)
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote add git-copy https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (fetch)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote add git-copy https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git remote -v
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (fetch)
+git-copy        https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git (push)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git (push)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+* main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git add --all
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -m "New Feature added"
+[main 78bb6e7] New Feature added
+ 1 file changed, 27 insertions(+)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.04 KiB | 531.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git
+   8e224ae..78bb6e7  main -> main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push git-copy main
+Enumerating objects: 66, done.
+Counting objects: 100% (66/66), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (66/66), done.
+Writing objects: 100% (66/66), 15.41 KiB | 876.00 KiB/s, done.
+Total 66 (delta 38), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (38/38), done.
+To https://github.com/Alicade123/Gym-Git-Exercise-Solutions-2.git
+ * [new branch]      main -> main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
+```
+
+### Exercise 2
+
+```bash
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git add .
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commmit -m "Home page Changed"
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -m "Home page Changed"
+[ft/footer db71117] Home page Changed
+ 2 files changed, 90 insertions(+), 2 deletions(-)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git add --all
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -m "Home page Changed again"
+[ft/footer 9ffc48a] Home page Changed again
+ 1 file changed, 11 insertions(+), 5 deletions(-)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>  git push --set-upstream origin ft/footer
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.27 KiB | 434.00 KiB/s, done.
+Total 7 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/Alicade123/Gym-Git-Exercise-Solutions/pull/new/ft/footer
+remote:
+To https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> ft/squashing
+ft/squashing : The term 'ft/squashing' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or
+if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ ft/squashing
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ft/squashing:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch ft/squashing
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkoutft/squashing
+git: 'checkoutft/squashing' is not a git command. See 'git --help'.
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git checkout ft/squashing
+Switched to branch 'ft/squashing'
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git branch
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+  ft/footer
+  ft/home-page-redesign
+  ft/service-redesign
+* ft/squashing
+  ft/team-page
+  main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git merge --squash ft/footer
+Updating 78bb6e7..9ffc48a
+Fast-forward
+Squash commit -- not updating HEAD
+ README.md | 83 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ home.html | 15 ++++++++++--
+ 2 files changed, 96 insertions(+), 2 deletions(-)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git add .
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git commit -am "footer changes squashing"
+[ft/squashing e5e2fd8] footer changes squashing
+ 2 files changed, 96 insertions(+), 2 deletions(-)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One> git push
+fatal: The current branch ft/squashing has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/squashing
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
+>>     git push --set-upstream origin ft/squashing
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1008 bytes | 336.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/Alicade123/Gym-Git-Exercise-Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/Alicade123/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
+```
+
+## Bundle 5
+
+### Exercise 1
+
+```bash
+- On your Github repo enable Github pages
+- Check if the link is publicly visible to anyone
+```
+
+### Exercise 2
+
+```bash
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git branch
+* main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git add --all
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git commit -m "Change made in Index page"
+[main ebd204e] Change made in Index page
+ 1 file changed, 283 insertions(+), 226 deletions(-)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.45 KiB | 744.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Alicade123/git-cafe-exercise.git
+   d1d3f9c..ebd204e  main -> main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise>
+```
