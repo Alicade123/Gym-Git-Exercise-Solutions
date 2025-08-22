@@ -1281,3 +1281,211 @@ To https://github.com/Alicade123/git-cafe-exercise.git
    d1d3f9c..ebd204e  main -> main
 PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise>
 ```
+
+## Bundle 6
+
+### Exercise 1
+
+```bash
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise>
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git branch "ft/menu-page"
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git branch
+  ft/menu-page
+* main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git checkout ft/menu-page
+Switched to branch 'ft/menu-page'
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git branch
+* ft/menu-page
+  main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git status
+On branch ft/menu-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        images/image.png
+        menu.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git branch
+* ft/menu-page
+  main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git status
+On branch ft/menu-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        images/ie8-panel/image.png
+        images/image.png
+        menu.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git add --all
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git commit -m "Added menu page"
+[ft/menu-page 1c8dd9c] Added menu page
+ 3 files changed, 25 insertions(+)
+ create mode 100644 images/ie8-panel/image.png
+ create mode 100644 images/image.png
+ create mode 100644 menu.html
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git push origin ft/menu-page
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.58 MiB | 965.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/menu-page' on GitHub by visiting:
+remote:      https://github.com/Alicade123/git-cafe-exercise/pull/new/ft/menu-page
+remote:
+To https://github.com/Alicade123/git-cafe-exercise.git
+ * [new branch]      ft/menu-page -> ft/menu-page
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git status
+On branch ft/menu-page
+nothing to commit, working tree clean
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git branch
+* ft/menu-page
+  main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise>
+```
+
+### Exercise 2
+
+```bash
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git branch "fix/bug"
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git checkout fix/bug
+Switched to branch 'fix/bug'
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git branch
+* fix/bug
+  ft/menu-page
+  main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git commit -am "The bug fixed title from menu to contact"
+[fix/bug 36463cc] The bug fixed title from menu to contact
+ 1 file changed, 172 insertions(+), 157 deletions(-)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git status
+On branch fix/bug
+nothing to commit, working tree clean
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git push origin fix/bug
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.20 KiB | 1.20 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'fix/bug' on GitHub by visiting:
+remote:      https://github.com/Alicade123/git-cafe-exercise/pull/new/fix/bug
+remote:
+To https://github.com/Alicade123/git-cafe-exercise.git
+ * [new branch]      fix/bug -> fix/bug
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git status
+On branch fix/bug
+nothing to commit, working tree clean
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git branch
+* fix/bug
+  ft/menu-page
+  main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise>
+```
+
+### Exercise 3
+
+```bash
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git branch
+* fix/bug
+  ft/menu-page
+  main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git status
+On branch fix/bug
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index-4.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git add .\index-4.html
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git status
+On branch fix/bug
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index-4.html
+
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git commit -m "fix:hot-fix change index-4 telephone from PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git branch "fix/bug"
+>> PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git checkout fix/bug
+>> Switched to branch 'fix/bug'
+>> PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git branch
+>> * fix/bug
+>>   ft/menu-page
+>>   main
+>> PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git commit -am "The bug fixed title from menu to contact"
+>> [fix/bug 36463cc] The bug fixed title from menu to contact
+>>  1 file changed, 172 insertions(+), 157 deletions(-)
+>> PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git status
+>> On branch fix/bug
+>> nothing to commit, working tree clean
+>> PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git push origin fix/bug
+>> Enumerating objects: 5, done.
+>> Counting objects: 100% (5/5), done.
+>> Delta compression using up to 12 threads
+>> Compressing objects: 100% (3/3), done.
+>> Writing objects: 100% (3/3), 1.20 KiB | 1.20 MiB/s, done.
+>> Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+>> remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+>> remote:
+>> remote: Create a pull request for 'fix/bug' on GitHub by visiting:
+>> remote:      https://github.com/Alicade123/git-cafe-exercise/pull/new/fix/bug
+>> remote:
+>> To https://github.com/Alicade123/git-cafe-exercise.git
+>>  * [new branch]      fix/bug -> fix/bug
+>> PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git status
+>> On branch fix/bug
+>> nothing to commit, working tree clean
+>> PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git branch
+>> * fix/bug
+>>   ft/menu-page
+>>   main
+>> PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> "
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git commit -m "fix:hot-fix change index-4 telephone from +1 800 603 6035 to +1 800 659 6035"
+[fix/bug 4e17113] fix:hot-fix change index-4 telephone from +1 800 603 6035 to +1 800 659 6035
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git status
+On branch fix/bug
+nothing to commit, working tree clean
+```
+
+### Exercise 4
+
+```bash
+- Review two PRs from your peers and request some changes on those PRs —> your peers need to give you access to their repository for you to review them.
+
+- Once, they have adjusted the requested changes, approve and merge that PR.
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git branch
+* fix/bug
+  ft/menu-page
+  main
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git checkout ft/menu-page
+Switched to branch 'ft/menu-page'
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git status
+On branch ft/menu-page
+nothing to commit, working tree clean
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git add .\menu.html
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git status
+On branch ft/menu-page
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   menu.html
+
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git commit -m "The Implemention of feedback the new pragraph added"
+[ft/menu-page 7ebacad] The Implemention of feedback the new pragraph added
+ 1 file changed, 37 insertions(+), 6 deletions(-)
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise> git push origin ft/menu-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.03 KiB | 1.03 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Alicade123/git-cafe-exercise.git
+   1c8dd9c..7ebacad  ft/menu-page -> ft/menu-page
+PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\git-cafe-exercise>
+```
