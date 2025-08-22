@@ -1248,6 +1248,8 @@ PS C:\xampp\htdocs\The Gym Phase2\GIT_BASICS\BUNDLE-One>
 ```bash
 - On your Github repo enable Github pages
 - Check if the link is publicly visible to anyone
+
+here's my [🔗 link](https://alicade123.github.io/Gym-Git-Exercise-Solutions/) 
 ```
 
 ### Exercise 2
